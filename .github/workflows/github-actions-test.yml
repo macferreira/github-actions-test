@@ -1,6 +1,6 @@
 name: github-actions-test
 run-name: ${{ github.actor }} is testing GitHub Actions
-on: [push]
+on: [push, workflow_call]
 jobs:
   check-bats-version:
     runs-on: ubuntu-latest
